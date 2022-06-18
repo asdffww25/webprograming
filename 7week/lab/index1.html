@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>웹프로그래밍 실습</title>
+  </head>
+  <script>
+    function square(row, col, sym){
+      for(let i=0; i<col; i++){
+        document.write(sym[0]);
+      }
+      document.write("<br>")
+
+      for(let q = 0; q < row-2; q++){
+        document.write(sym[1]);
+        for(let j = 0; j < col-2; j++){
+          document.write("&nbsp&nbsp&nbsp");
+        }
+        document.write(sym[2] + "<br>");
+      }
+
+      for(let a=0; a<col; a++){
+        document.write(sym[3]);
+      } 
+    }
+      var col = prompt("출력할 행 수를 입력하세요.");
+      var row = prompt("출력할 열 수를 입력하세요.");
+      var sym = prompt("연속적으로 기호를 4개 입력하세요.");
+      document.write("<h3>기로호 표시된 border<h3>");
+      document.write("<hr>")
+      square(row, col, sym);
+  </script>
+  <body>
+    
+  </body>
+</html>

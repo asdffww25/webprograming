@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>웹프로그래밍 실습</title>
+    <style>
+        table{
+          border:1px solid black;
+          border-collapse: collapse;
+          margin-bottom: 15px;
+        }
+        td{
+          border:1px solid black;
+          border-collapse: collapse;
+        }
+        #booktitle{
+          border:1px solid white;
+          color:red;
+          text-align: center;
+          
+          width: 597px;
+        }
+        .head{
+          background-color: green;
+          color:white;
+        }
+        .su{
+          width: 70px;
+        }
+        .hap{
+          width: 180px;
+        }
+        button{
+          margin-bottom: 15px;
+        }
+        a{
+          text-decoration: none;
+          color:blue;
+        }
+        .a1{
+            width: 200px;
+            text-align: center;
+        }
+        .a2{
+          width: 120px;
+          text-align: right;
+        }
+        .a21{
+          width: 120px;
+          text-align: center;
+        }
+        .a3{
+          width: 70px;
+          text-align: center;
+        }
+        .a4{
+          width: 180px;
+          text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="booktitle">
+      <b>교재주문</b>
+    </div>
+    <table>
+      <tr class="head">
+        <td class="a1">전공서적</td>
+        <td class="a21">가격</td>
+        <td class="a3">수량</td>
+        <td class="a4">합계</td>
+      </tr>
+      <tr>
+        <td class="a1">자바프로그래밍</td>
+        <td class="a2">34,000원</td>
+        <td class="a3"><input class="su" type="text" value="0"></td>
+        <td class="a4"><input class="hap" type="text" value="0"></td>
+      </tr>
+      <tr>
+        <td class="a1">파이썬</td>
+        <td class="a2">95,00원</td>
+        <td class="a3"><input type="text" class="su" value="0"></td>
+        <td class="a4"><input type="text" class="hap" value="0"></td>
+      </tr>
+      <tr>
+        <td class="a1">이산수학</td>
+        <td class="a2">12,000원</td>
+        <td class="a3"><input type="text" value="0" class="su"></td>
+        <td class="a4"><input class="hap" type="text" value="0"></td>
+      </tr>
+      <tr>
+        <td class="a1">웹프로그래밍</td>
+        <td class="a2">50,000원</td>
+        <td class="a3"><input type="text" value="0" class="su"></td>
+        <td class="a4"><input class="hap" type="text" value="0"></td>
+      </tr>
+    </table>
+    <button>계산</button>
+    <button>구매</button>
+    <button>초기화</button><br>
+    <a href="">메인페이지로 이동</a>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>웹프로그래밍실습</title>
+  </head>
+  <script>
+    function gugudan(n){
+      let size = 10;
+      for(let i=1; i<=9; i++){      
+        document.write("<span style='font-size:" + size + "px'>");
+        document.write(n + " * " + i + " = " + i*n + "</span><br>");
+        size += 5;
+      }
+    }
+    document.write("<h3>10px로 시작 각 단위별 5px씩 증가한 구구단 출력</h3>");
+    let n = prompt("출력할 구구단을 입력하세요.");
+    gugudan(n);
+  </script>
+  <body>
+    
+  </body>
+</html>

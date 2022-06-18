@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>웹프로그래밍</title>
+        <style>
+            div{
+                width: 300px;
+                height: 500px;
+            }
+            .after{ 
+                display: none;
+            }
+            .img:hover .after{
+                display:block;
+            }
+            .img:hover .before{
+                display : none;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>:hover 활용</h3>
+        <hr>
+        마우스를 올리면 카드의 앞면이 보인다.
+        <div class="img">
+            <img class="before" src="../img/cardbeforejpg.jpg" width="300" height="500">
+            <img class="after" src="../img/spadea.jpg" width="300" height="500">
+        </div>
+        
+    </body>
+</html>
