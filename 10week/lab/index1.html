@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>웹 프로그래밍 실습</title>
+    <script>
+      function changeColor(){
+        let found = null;
+        let color = document.getElementsByName("color");
+        let div = document.getElementById("div");
+        for(let i = 0; i < color.length; i++){
+          if(color[i].checked == true){
+            found = color[i];
+          }
+        }
+        if(found != null){
+          document.body.style.background = found.value;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      
+        <input type="radio" name="color" value="red" onclick="changeColor()">빨강
+        <input type="radio" name="color" value="yellow" onclick="changeColor()">노랑
+        <input type="radio" name="color" value="blue" onclick="changeColor()">파랑
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>마우스 관련 리스너</title>
+  <style>
+    span{
+      display: inline-block;
+    }
+  </style>
+<script>
+  var width=1;
+  function down(obj) {
+    
+    obj.style.fontStyle = "italic";
+  }
+  function up(obj) {
+    obj.style.fontStyle = "normal";
+  }
+  function over(obj) {
+    obj.style.borderColor = "violet";
+   
+  }
+  function out(obj) {
+    obj.style.borderColor = "lightgray";
+  }
+  function mywheel(e, obj) {
+    console.log("aa");
+   if(e.wheelDelta < 0) { 
+     width--;
+   if(width < 0) width = 0; 
+   }
+  else
+   width++;
+ console.log(e.wheelDelta);
+  obj.style.borderStyle = "ridge";
+ obj.style.borderWidth = width+"px";
+}
+</script></head>
+<body >
+  <h3>마우스 관련 이벤트 리스너</h3>
+  <hr>
+  <div >마우스 관련
+  <span onwheel ="mywheel(event, this)"
+    onmousedown="down(this)"
+    onmouseup="up(this)"
+    onmouseover="over(this)"
+    onmouseout="out(this)">이벤트</span>가 발생합니다.
+  </div>
+  </body>
+  </html>

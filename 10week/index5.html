@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>웹프로그래밍</title>
+    <script>
+      function drawImage(){
+        var sel = document.getElementById("fruits");
+        var img = document.getElementById("fruitimage");
+        img.src = sel.options[sel.selectedIndex].value;
+      }
+    </script>
+  </head>
+  <body onload="drawImage()">
+    <h3>select 객체에서 선택한 과일 출력</h3>
+    <hr>
+    <form>
+      <select id="fruits" onchange="drawImage()">
+        <option value="../img/망고.jpg">망고</option>
+        <option value="../img/바나나.jpg">바나나</option>
+        <option value="../img/사과.jpg">사과</option>
+      </select>
+      <img id="fruitimage" width="300" height="300" src = "../img/망고.jpg" alt="">
+    </form>
+    
+  </body>
+</html>

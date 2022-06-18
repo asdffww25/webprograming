@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>웹프로그래밍</title>
+    <script>
+      function load(URL){
+        newWin = window.open(URL, "myWin", "left=300, top=300, width=400, height=300");
+      }
+      function closeNewWindow(){
+        if(newWin==null || newWin.closed){
+          return;
+        }
+        else{
+          newWin.close();
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h3>window의 close()로 윈도우 닫기</h3>
+    <hr>
+    <a href="javascript:load('http://www.hallym.ac.kr')">
+      한림대학교 웹 페이지
+    </a><br>
+    <a href="javascript:window.close()">
+      현재 윈도우 닫기
+    </a><br>
+    <a href="javascript:closeNewWindow()">
+      새 윈도우 닫기
+    </a><br>
+  </body>
+</html>

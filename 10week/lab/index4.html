@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>웹 프로그래밍 실습</title>
+    <script>
+      function changeUp(obj){
+        obj.style.color="";
+        obj.style.background=""
+        obj.style.border=""
+        obj.style.boxShadow = ""
+      }
+      function changeDown(obj){
+        obj.style.color="white";
+        obj.style.background="#68AA3C"
+        obj.style.border="0"
+        obj.style.boxShadow = "1px 1px 1px gray"
+        
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      <button style="width:150px; height:50px" type="button"
+       onmouseup="changeUp(this)" onmousedown="changeDown(this)">버튼을 눌러보세요</button>
+    </form>
+  </body>
+</html>

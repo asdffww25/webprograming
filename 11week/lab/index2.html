@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>웹프로그래밍 실습</title>
+    <script>
+      function nullname(){
+        let text = document.getElementById("text");
+        if(!text.value){
+          alert("필드가 비어있네요!")
+        }
+      }
+    </script>
+  </head>
+  <body>
+    이름 : <input type="text" id="text" value="">
+    <input type="button" id="btn" value="확인" onclick="nullname()">
+  </body>
+</html>

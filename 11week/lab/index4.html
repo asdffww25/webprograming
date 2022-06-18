@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>웹프로그래밍 실습</title>
+    <script>
+      function strnum(){
+        let text = document.getElementById("text");
+        let check = /^[0-9]+$/;
+        let num=text.value;
+
+        if(!check.test(text.value)){
+          alert("숫자만 입력하세요!");
+        }
+        
+      }
+    </script>
+  </head>
+  <body>
+    전화번호(-없이 입력) : <input type="text" id="text" value="">
+    <input type="button" onclick="strnum()" value="확인">
+  </body>
+</html>

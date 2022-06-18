@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>웹프로그래밍 실습</title>
+    <script>
+      function totalScore(score1, score2){
+        return score1 + score2;
+      }
+      function scoreAvg(score1, score2){
+        return (score1 + score2)/2;
+      }
+      function grades(avg){
+        let grade = "";
+        if(avg >= 93 && avg <=97){
+          grade = 'A';
+        }
+        else if(avg >= 83 && avg <= 87){
+          grade = 'B';
+        }
+        else if(avg >= 73 && avg <= 77){
+          grade = 'C';
+        }
+        else if(avg >= 63 && avg <= 67){
+          grade = 'D';
+        }
+        else{
+          grade = 'F';
+        }
+        return grade;
+      }
+      let name = prompt("이름을 입력하세요 : ");
+      let score1 = parseInt(prompt("[수학]중간성적을 입력하세요 : "));
+      let score2= parseInt(prompt("[수학]기말성적을 입력하세요 : "));
+
+      let total = totalScore(score1, score2);
+      let avg = scoreAvg(score1, score2);
+      let grade = grades(avg);
+
+      let eScore = new Object();
+      eScore.name = name;
+      eScore.score1 = score1;
+      eScore.score2 = score2;
+      eScore.total = total;
+      eScore.avg = avg;
+      eScore.grade = grade;
+
+      eScore.totalScore = totalScore;
+      eScore.scoreAvg = scoreAvg;
+      eScore.grades = grades;
+
+      document.write("<div>");
+      document.write("성명 : " + eScore.name + "<br>");
+      document.write("중간성적 : " + eScore.score1 + "<br>");
+      document.write("기말성적 : " + eScore.score2 + "<br>");
+      document.write("총점 : " + eScore.total + "<br>");
+      document.write("평균 : " + eScore.avg(eScore.score1, eScore.score2) + "<br>");
+      document.write("학점 : " + eScore.grades(eScore.avg) + "<br>");
+      document.write("</div>");
+    </script>
+  </head>
+  <body>
+    
+  </body>
+</html>

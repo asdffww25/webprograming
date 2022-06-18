@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>웹 프로그래밍 실습</title>
+    <script>
+      function changeLetter(obj){
+        obj.value = obj.value.toLowerCase();
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      영문 문자열을 입력하세요 :
+      <input tpye="text" id="text" onchange="changeLetter(this)" value=""><br>
+      입력폼을 벗어나면 영문자가 모두 소문자로 변경됩니다.
+    </form>
+  </body>
+</html>

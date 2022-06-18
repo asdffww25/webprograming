@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>웹프로그래밍 실습</title>
+    <script>
+      function score(){
+        var score = 0;
+        for(let i = 1; i < 5; i++){
+          let div = document.getElementById(`div${i}`);
+          let text = document.getElementById(`text${i}`);
+          let result = eval(div.innerHTML);
+          if(result == text.value){
+            score += 10;
+            div.style.textDecoration = "none"
+          }
+          else{
+            div.style.textDecoration = "line-through";
+          }
+        }
+        var final = document.getElementById('div5')
+        if(score == 40){
+          final.innerHTML = score + "점 : 합격하셨습니다.";
+        }
+        else{
+          final.innerHTML = score + "점";
+        }
+      }
+    </script>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <h3>치매 예방 프로그램</h3>
+    <hr>
+    <table >
+      <tr>
+        <td><div id="div1">5*6</div></td>
+        <td><input type="text" id="text1" value=""></td>
+      </tr>
+      <tr>
+        <td><div id="div2">7+5*3</div></td>
+        <td><input type="text" id="text2" value=""></td>
+      </tr>
+      <tr>
+        <td><div id="div3">23*2</div></td>
+        <td><input type="text" id="text3" value=""></td>
+      </tr>
+      <tr>
+        <td><div id="div4">35-7</div></td>
+        <td><input type="text" id="text4" value=""></td>
+      </tr>
+      <tr>
+        <td><button type="button" onclick="score()">채점</button></td>
+        <td><div id="div5">0점</div></td>
+      </tr>
+    </table>
+  </body>
+</html>

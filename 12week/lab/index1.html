@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>웹프로그래밍 실습</title>
+    <script>
+      function change(){
+        var select = document.getElementById("site");
+        var newWin = select.options[select.selectedIndex].value;
+        if(newWin == '0'){
+          alert("하나를 선택하여야 합니다.")
+        }
+        else{
+          window.open(newWin, "_blank", "width=800 height=300");
+        }
+        
+      }
+    </script>
+  </head>
+  <body>
+    <h3>옵션 선택으로 사이트 접속</h3>
+    윈도우 하나를 공유합니다.
+    <hr>
+    <select id="site" onchange="change()">
+      <option value="0">사이트선택</option>
+      <option value="https://www.youtube.com/">유튜브</option>
+      <option value="https://www.naver.com">네이버</option>
+      <option value="https://www.google.co.kr/">구글</option>
+    </select>
+  </body>
+</html>
