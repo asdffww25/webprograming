@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>웹프로그래밍</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#b1').click(function(){
+          $('#p1').remove();
+          $('<p></p>').html("이제부터는 자바스크립트를 공부합니다!").insertAfter('h2')
+          $('<hr>').insertAfter('p')
+          $('<img>').attr({'src' : '../../img/jquery.png'}).insertAfter('hr');
+          $('<hr>').insertAfter('img');
+          $('<p></p>').html('즐겁게 열심히 합시다!').insertAfter('hr');
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Web Programming!</h2>
+    <p id="p1">지금까지 HTML과 CSS를 공부했습니다.</p>
+    <button id="b1">Next</button>
+
+  </body>
+</html>

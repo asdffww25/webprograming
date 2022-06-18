@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>웹프로그래밍</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('textarea').keyup(function(){
+          var inputLength = $(this).val().length;
+          var remain = 150 - inputLength;
+          $('h1').html(remain);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <p>지금 내 생각을</p>
+      <h1>150글자 이내로 작성하세요.</h1>
+      <textarea cols="70" rows="5"></textarea>
+    </div>
+  </body>
+</html>

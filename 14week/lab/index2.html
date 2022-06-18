@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>웹프로그래밍</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#btn').css({
+          width : 100,
+          height : 50,
+          backgroundColor : '#008080',
+          borderRadius : '20px',
+          border : '0',
+          color : 'white'
+        });
+        $('#btn').hover(function(){
+          $('#btn').css({opacity : 0.5})
+        },function(){
+          $('#btn').css({opacity : 1});
+        });
+      })
+    </script>
+  </head>
+  <body>
+    /*버튼위에 마우스가 올라가면 반투명해지고, 
+    마우스가 벗어나면 불투명해지는 버튼을 만드세요*/<br>
+
+    <button id="btn">버튼</button>
+  </body>
+</html>

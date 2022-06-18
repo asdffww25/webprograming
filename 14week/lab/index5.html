@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>웹프로그래밍</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('<ol></ol').appendTo('body');
+        $('#btn').click(function(){
+          var text = $('#text').val();
+          $('<li></li>').html(text).appendTo('ol');
+        });
+      });
+    </script>
+  </head>
+  <body>
+    여행하고 싶은 지역 : <input type="text" value="" id="text">
+    <button id="btn">추가</button>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+body{
+  margin: 0 auto;
+  text-align: center;
+  overflow: scroll;
+  background-color: #eceae4;
+  font-family: BatangChe, sans-serif;
+}
+#title{
+  text-align: center;
+  font-size: 100px;
+  margin-top: 30px;
+}
+hr{
+  width: 900px;
+  text-align: center;
+}
+#rehr{
+  width: 60px;
+}
+img{
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+li{
+  width: 300px;
+}
+.bx-wrapper{
+  max-width: 100%;
+  display: block;
+  margin:0 auto;
+  height: 330px;
+  background-color: #ddd4bb;
+  border:0
+}
+
+#blank{
+  height: 200px;
+}
+details{
+  font-size: 30px;
+  margin: 30px;
+}
+.reverse{
+  font-weight: 900;
+  background-color: #ddd4bb;
+  font-size:40px;
+}
+details summary::marker{font-size:0;}
+#remote{
+  position:fixed;
+  bottom:40%;
+  right:20px;
+  border:0px solid black;
+  padding:20px;
+  background: #ddddbb;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+#remote a{
+  text-decoration: none;
+  font-size: 20px;
+  opacity: 1;
+  color: black;
+}
+#remote a:hover{
+  background-color: #bbccdd;
+}
+li:hover{
+  transform: scale(1.1);
+  opacity: 1;
+}
+summary{
+  margin: auto;
+  width: 500px;
+  height: 50px;
+}
+.bx-wrapper .bx-caption{
+  height: 50px;
+  bottom:40px;
+  background-color:rgba( 255, 255, 255, 0 );
+}
+.bx-wrapper .bx-caption span{
+  font-weight: 900;
+}
